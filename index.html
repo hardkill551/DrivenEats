@@ -4,11 +4,135 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/reset.css">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <title>DrivenEats</title>
 </head>
 <body>
+    <header>
+        <h1 class="titulo">DrivenEats</h1>
+        <p>Sua comida em 6 minutos</p>
+    </header>
+    <section class="first">
+        <div class="prato">Primeiro, seu prato</div>
+        <div class="options">
+            <div class="opção" data-test="dish">
+                <div class="opções">
+                    <img src="imgs/frango.png" alt="">
+                    <p data-test="item-name">Frango Yin Yang</p>
+                    <div class="batata">
+                        <p>Um pouco de batata,</p>
+                        <p>um pouco de salada</p>
+                    </div>
+                    <p data-test="item-price">R$ 14,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="dish">
+                <div class="opções">
+                    <img src="imgs/strogonoff.jpg" alt="">
+                    <p data-test="item-name">Strogonoff</p>
+                    <div class="batata">
+                        <p>Strogonoff com uma</p>
+                        <p>saladinha, feijão e arroz</p>
+                    </div>
+                    <p data-test="item-price">R$ 16,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="dish">
+                <div class="opções">
+                    <img src="imgs/picanha.jpg" alt="">
+                    <p data-test="item-name">Picanha</p>
+                    <div class="batata">
+                        <p>Picanha assada com,</p>
+                        <p>mandioca na chapa</p>
+                    </div>
+                    <p data-test="item-price">R$ 59,90</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section>
+        <div class="prato">Agora, sua bebida</div>
+        <div class="options">
+            <div class="opção" data-test="drink">
+                <div class="opções">
+                    <img src="imgs/coca.png" alt="">
+                    <p data-test="item-name">Coquinha gelada</p>
+                    <div class="batata">
+                        <p>Lata 350ml</p>
+                    </div>
+                    <p data-test="item-price">R$ 4,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="drink">
+                <div class="opções">
+                    <img src="imgs/sprite.jpg" alt="">
+                    <p data-test="item-name">Sprite quente</p>
+                    <div class="batata">
+                        <p>Garrafa 600ml</p>
+                    </div>
+                    <p data-test="item-price">R$ 7,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="drink">
+                <div class="opções">
+                    <img src="imgs/laranja.jpg" alt="">
+                    <p data-test="item-name">Suco de laranja natural</p>
+                    <div class="batata">
+                        <p>Jarra</p>
+                    </div>
+                    <p data-test="item-price">R$ 10,90</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="last">
+        <div class="prato">Por fim, sua sobremesa</div>
+        <div class="options">
+            <div class="opção" data-test="desert">
+                <div class="opções">
+                    <img src="imgs/pudim.png" alt="">
+                    <p data-test="item-name">Pudim</p>
+                    <div class="batata">
+                        <p>Apenas pudim</p>
+                    </div>
+                    <p data-test="item-price">R$ 7,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="desert">
+                <div class="opções">
+                    <img src="imgs/rabanada.jpg" alt="">
+                    <p data-test="item-name">Rabanada</p>
+                    <div class="batata">
+                        <p>Apenas rabanada</p>
+                    </div>
+                    <p data-test="item-price">R$ 10,90</p>
+                </div>
+            </div>
+            <div class="opção" data-test="desert">
+                <div class="opções">
+                    <img src="imgs/mousse.jpg" alt="">
+                    <p data-test="item-name">Mousse</p>
+                    <div class="batata">
+                        <p>Apenas mousse</p>
+                    </div>
+                    <p data-test="item-price">R$ 5,90</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <footer>
+        <div data-test="order-btn">
+            <p>Selecione os 3 itens
+            para fechar o pedido</p>
+        </div>
+    </footer>
+
+
     <script src="script.js"></script>
 </body>
 </html>
