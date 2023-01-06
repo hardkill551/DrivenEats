@@ -99,7 +99,7 @@
         <div class="prato">Por fim, sua sobremesa</div>
         <div class="options3">
             <div onclick="selecionar3(this); selecionando7()" class="opção" data-test="dessert">
-                <div class="opções">
+                <div class="opções" onclick="clique2()">
                     <img src="imgs/pudim.png" alt="">
                     <p data-test="item-name">Pudim</p>
                     <div class="batata">
@@ -107,10 +107,11 @@
                     </div>
                     <p data-test="item-price">R$ 7,90</p>
                     <ion-icon name="checkmark-circle" class="js escondido7"></ion-icon>
+                    
                 </div>
             </div>
             <div onclick="selecionar3(this); selecionando8()" class="opção" data-test="dessert">
-                <div class="opções">
+                <div class="opções" onclick="clique2()">
                     <img src="imgs/rabanada.jpg" alt="">
                     <p data-test="item-name">Rabanada</p>
                     <div class="batata">
@@ -118,10 +119,11 @@
                     </div>
                     <p data-test="item-price">R$ 10,90</p>
                     <ion-icon name="checkmark-circle" class="js2 escondido8"></ion-icon>
+                    
                 </div>
             </div>
             <div onclick="selecionar3(this); selecionando9()" class="opção opção2" data-test="dessert">
-                <div class="opções">
+                <div class="opções" >
                     <img src="imgs/mousse.jpg" alt="">
                     <p data-test="item-name">Mousse</p>
                     <div class="batata">
@@ -129,12 +131,13 @@
                     </div>
                     <p data-test="item-price">R$ 5,90</p>
                     <ion-icon name="checkmark-circle" class="js3 escondido9"></ion-icon>
+                    
                 </div>
             </div>
         </div>
         
     </section>
-    <footer onclick="escondee(this)">
+    <footer>
         <div data-test="order-btn">
             <p>Selecione os 3 itens
             para fechar o pedido</p>

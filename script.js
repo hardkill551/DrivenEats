@@ -1,11 +1,23 @@
+let h = false;
+let j = false;
+let k = false;
+
 function selecionar(clique){
+    h = true
     const x = document.querySelector(".options .selecionado")
     if (x !== null){
         x.classList.remove("selecionado")
     }
     clique.classList.add("selecionado")
+    if (h === true && k === true && j === true){
+        const x = document.querySelector("footer div")
+        const y = document.querySelector("footer div p")
+        x.classList.add("esconde")
+        y.innerHTML="Fechar pedido"
+        }
 }
 function selecionar2(clique){
+    j = true
     const x = document.querySelector(".options2 .selecionado")
     if (x !== null){
         x.classList.remove("selecionado")
@@ -13,8 +25,15 @@ function selecionar2(clique){
     clique.classList.add("selecionado")
     const y = document.querySelector(".options2 .opções .js")
     y.classList.remove("escondido")
+    if (h === true && k === true && j === true){
+        const x = document.querySelector("footer div")
+        const y = document.querySelector("footer div p")
+        x.classList.add("esconde")
+        y.innerHTML="Fechar pedido"
+        }
     }
 function selecionar3(clique){
+    k = true
     const x = document.querySelector(".options3 .selecionado")
     if (x !== null){
         x.classList.remove("selecionado")
@@ -22,6 +41,12 @@ function selecionar3(clique){
     clique.classList.add("selecionado")
     const y = document.querySelector(".options3 .opções .js")
     y.classList.remove("escondido")
+    if (h === true && k === true && j === true){
+        const x = document.querySelector("footer div")
+        const y = document.querySelector("footer div p")
+        x.classList.add("esconde")
+        y.innerHTML="Fechar pedido"
+        }
     }
 
 const escondido1 = document.querySelector(".escondido1")
@@ -33,6 +58,8 @@ const escondido6 = document.querySelector(".escondido6")
 const escondido7 = document.querySelector(".escondido7")
 const escondido8 = document.querySelector(".escondido8")
 const escondido9 = document.querySelector(".escondido9")
+
+
     function selecionando(){
         if(escondido3 !== null){
             escondido3.classList.add("escondido3")
@@ -105,6 +132,7 @@ const escondido9 = document.querySelector(".escondido9")
             escondido9.classList.add("escondido9")
         }
         escondido8.classList.remove("escondido8")
+        
 }
     function selecionando9(){
         if(escondido8 !== null){
@@ -114,5 +142,6 @@ const escondido9 = document.querySelector(".escondido9")
             escondido7.classList.add("escondido7")
         }
         escondido9.classList.remove("escondido9")
+        
+        
 }
-
