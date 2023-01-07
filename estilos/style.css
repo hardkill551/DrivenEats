@@ -5,7 +5,6 @@ body{
     font-family: 'Roboto', sans-serif;
     background-color: #EEEEEE;
 }
-
 header{
     width: 100%;
     height: 92px;
@@ -18,7 +17,6 @@ header{
     left: 0px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     z-index: 1;
-
 }
 .first{
     margin-top: 123px;
@@ -91,14 +89,11 @@ footer p{
     color: #333333;
     font-size: 16px;
 }
-
 .opções > p:nth-child(4){
     font-size: 16px;
     font-weight: 400;
     color: black;
 }
-
-
 .options2{
     display: flex;
     width: 100%;
@@ -144,11 +139,9 @@ footer button{
     background-color: #32B72F;
     font-weight: 700;
 }
-
 .selecionado{
     border: 5px solid #32B72F; 
 }
-
 ion-icon{
     color: #32B72F;
     position: absolute;
@@ -156,31 +149,9 @@ ion-icon{
     bottom: 0px;
     font-size: 18px;
 }
-.escondido1{
+.escondido{
     display: none;
 }
-.escondido2{
-    display: none;
+.selecionado .escondido{
+    display: block;
 }
-.escondido3{
-    display: none;
-}
-.escondido4{
-    display: none;
-}
-.escondido5{
-    display: none;
-}
-.escondido6{
-    display: none;
-}
-.escondido7{
-    display: none;
-}
-.escondido8{
-    display: none;
-}
-.escondido9{
-    display: none;
-}
-
