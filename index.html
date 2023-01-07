@@ -99,7 +99,7 @@
         <div class="prato">Por fim, sua sobremesa</div>
         <div class="options3">
             <div onclick="selecionar3(this); selecionando7()" class="opção" data-test="dessert">
-                <div class="opções" onclick="clique2()">
+                <div class="opções">
                     <img src="imgs/pudim.png" alt="">
                     <p data-test="item-name">Pudim</p>
                     <div class="batata">
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div onclick="selecionar3(this); selecionando8()" class="opção" data-test="dessert">
-                <div class="opções" onclick="clique2()">
+                <div class="opções">
                     <img src="imgs/rabanada.jpg" alt="">
                     <p data-test="item-name">Rabanada</p>
                     <div class="batata">
@@ -138,10 +138,12 @@
         
     </section>
     <footer>
-        <div data-test="order-btn">
+        <a onclick="zap(this)" target="_blank">
+        <button data-test="order-btn" disabled>
             <p>Selecione os 3 itens
             para fechar o pedido</p>
-        </div>
+            </button>
+        </a>
     </footer>
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
