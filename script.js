@@ -27,7 +27,6 @@ function selecionar2(clique){
         x.classList.remove("selecionado");
     }
     clique.classList.add("selecionado");
-    const y = document.querySelector(".options2 .opções .js");
     comida2 = clique.querySelector("p").innerHTML;
     price2 = Number(clique.querySelector(price4).innerHTML.replace(",",".").replace("R$ ",""));
     clique2();
@@ -39,7 +38,6 @@ function selecionar3(clique){
         x.classList.remove("selecionado");
     }
     clique.classList.add("selecionado");
-    const y = document.querySelector(".options3 .opções .js");
     comida3 = clique.querySelector("p").innerHTML;
     price3 = Number(clique.querySelector(price4).innerHTML.replace(",",".").replace("R$ ",""));
     clique2();
