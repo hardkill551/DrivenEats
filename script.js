@@ -156,7 +156,7 @@ function zap(clique55){
 - Prato: ${tata}
 - Bebida: ${tata2}
 - Sobremesa: ${tata3}
-Total: R$ ${price+price2+price3.toFixed(2)}`);
+Total: R$ ${(price+price2+price3).toFixed(2)}`);
     console.log(clique55);
     const link3 = link+link2;
     clique55.setAttribute("href",link3);
