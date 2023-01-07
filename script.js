@@ -7,6 +7,7 @@ let tata2 = "";
 let price2 = 0;
 let tata3 = "";
 let price3 = 0;
+const price4 = ".opções p:nth-child(4)"
 
 function selecionar(clique){
     h = true;
@@ -17,7 +18,7 @@ function selecionar(clique){
     clique.classList.add("selecionado");
     clique2();
     tata = clique.querySelector("p").innerHTML;
-    price = Number(clique.querySelector(".opções p:nth-child(4)").innerHTML.replace(",",".").replace("R$ ",""));
+    price = Number(clique.querySelector(price4).innerHTML.replace(",",".").replace("R$ ",""));
 }
 function selecionar2(clique){
     j = true;
@@ -30,7 +31,7 @@ function selecionar2(clique){
     y.classList.remove("escondido");
     clique2();
     tata2 = clique.querySelector("p").innerHTML;
-    price2 = Number(clique.querySelector(".opções p:nth-child(4)").innerHTML.replace(",",".").replace("R$ ",""));
+    price2 = Number(clique.querySelector(price4).innerHTML.replace(",",".").replace("R$ ",""));
 }
 function selecionar3(clique){
     k = true;
@@ -43,7 +44,7 @@ function selecionar3(clique){
     y.classList.remove("escondido");
     clique2();
     tata3 = clique.querySelector("p").innerHTML;
-    price3 = Number(clique.querySelector(".opções p:nth-child(4)").innerHTML.replace(",",".").replace("R$ ",""));
+    price3 = Number(clique.querySelector(price4).innerHTML.replace(",",".").replace("R$ ",""));
     }
 
 const escondido1 = document.querySelector(".escondido1");
@@ -151,8 +152,7 @@ if (h === true && k === true && j === true){
 }
 function zap(clique55){
     const link = "https://wa.me/5561999999999?text=";
-    const link2 = encodeURIComponent
-    (`Olá, gostaria de fazer o pedido:
+    const link2 = encodeURIComponent(`Olá, gostaria de fazer o pedido:
 - Prato: ${tata}
 - Bebida: ${tata2}
 - Sobremesa: ${tata3}
