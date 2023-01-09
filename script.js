@@ -52,13 +52,17 @@ if (h === true && k === true && j === true){
     }
 }
 function zap(clique55){
+    let nome = prompt("Qual seu nome?");
+    let endereco = prompt("Qual seu endereco?")
     const link = "https://wa.me/5561999999999?text=";
     const link2 = encodeURIComponent(`Olá, gostaria de fazer o pedido:
 - Prato: ${comida}
 - Bebida: ${comida2}
 - Sobremesa: ${comida3}
-Total: R$ ${(price+price2+price3).toFixed(2)}`);
-    console.log(clique55);
-    const link3 = link+link2;
-    clique55.setAttribute("href",link3);
+Total: R$ ${(price+price2+price3).toFixed(2)}
+
+Nome: ${nome}
+Endereço: ${endereco}
+`);
+    clique55.setAttribute("href",link+link2);
 }
